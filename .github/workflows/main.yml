@@ -20,10 +20,10 @@ jobs:
     steps:
     # 首先copy git仓库到虚拟机上
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         # 安装初始化python
       - name: 'Set up Python'
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4
         with:
           python-version: 3.8
         # 安装脚本所需的依赖
