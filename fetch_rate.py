@@ -33,7 +33,7 @@ def main():
         if(d['resultcode'] == "200"):     #当返回状态码为200，输出天气状况
             item = d["result"][0]["data4"] #日元
             # 天气提示内容
-            tdwt = "【今日份汇率】\日元： " + item["fBuyPri"] + "\n更新时间: " + item["time"] + "\n✁-----------------------------------------\n"
+            tdwt = "【今日份汇率】\n日元： " + item["fBuyPri"] + "\n更新时间: " + item["time"] + "\n✁-----------------------------------------\n"
             # print(tdwt)
             # requests.post(cpurl,tdwt.encode('utf-8'))         #把天气数据转换成UTF-8格式，不然要报错。
             ServerPush(tdwt)
